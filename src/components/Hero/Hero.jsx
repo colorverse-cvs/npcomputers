@@ -1,46 +1,49 @@
 import React from "react";
 import "./Hero.css";
+import herovideo from "../../assets/hero.mp4"
 import logo from "../../assets/np-logo.webp";
 
 const Hero = () => {
   return (
-    <section className="hero">
-      {/* Background Video */}
-      <div className="hero-video">
-        <video autoPlay muted loop playsInline>
-          <source
-            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1607614/Architecture%20-%20303%20compressed.mp4"
-            type="video/mp4"
-          />
-        </video>
-      </div>
+<section className="hero">
+  {/* Background Video */}
+  <div className="hero-video">
+    <video autoPlay muted loop playsInline>
+      <source src={herovideo} type="video/mp4" />
+    </video>
+  </div>
 
-      {/* Dark Overlay */}
-      <div className="hero-overlay" />
+  {/* Dark Overlay */}
+  <div className="hero-overlay" />
 
-      {/* Content */}
-      <div className="hero-container">
-        <div className="hero-left">
-          <img src={logo} alt="NP Technologies" className="hero-logo" />
+  {/* Content */}
+  <div className="hero-container">
+<div className="hero-left">
+  <img src={logo} alt="NP Computers Rahata" className="hero-logo" />
+  <div className="line-animate" />
+  <h1 className="hero-title">
+    Powering <span>Your Digital World</span> with NP Computers 
+  </h1>
+  <p className="hero-text">
+    High-performance PCs, laptops, accessories, and expert repair services — 
+    bringing technology closer to you with trust and speed.
+  </p>
+  <div className="hero-actions">
+    <button className="btn-primary">Explore Our Services</button>
+    <button className="btn-secondary">Get in Touch</button>
+  </div>
+</div>
 
-          <div className="line-animate" />
+  </div>
 
-          <h1 className="hero-title">
-            The Group of <span>Technologies</span>
-          </h1>
+  {/* Hero Bottom Curve */}
+  <div className="hero-curve">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path d="M0,0 C720,100 720,100 1440,0 L1440,100 L0,100 Z" fill="#fff" />
+    </svg>
+  </div>
+</section>
 
-          <p className="hero-text">
-            Delivering secure, scalable and professional IT solutions for
-            businesses and enterprises.
-          </p>
-
-          <div className="hero-actions">
-            <button className="btn-primary">Our Services</button>
-            <button className="btn-secondary">Contact</button>
-          </div>
-        </div>
-      </div>
-    </section>
   );
 };
 

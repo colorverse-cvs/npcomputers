@@ -1,0 +1,44 @@
+.features-section {
+  padding: 0px 20px;
+  text-align: center;
+  margin-top: -60px; /* Pull up over Hero curve */
+  position: relative;
+  z-index: 5; /* Over Hero */
+}
+
+
+
+.features-section h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #110069;
+}
+
+.features-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.feature-card {
+  /* background: #fff; */
+  border-radius: 10px;
+  padding: 25px;
+  width: 220px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15); /* stronger shadow for floating effect */
+  transition: transform 0.3s;
+  position: relative;
+  top: -30px; /* optional extra lift over curve */
+}
+
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+
+.feature-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
