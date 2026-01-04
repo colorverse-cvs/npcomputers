@@ -2,6 +2,7 @@
    HERO BASE
 ===================== */
 /* Hero bottom curve */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap'); 
 .hero-curve {
   position: absolute;
   bottom: 0;
@@ -116,6 +117,9 @@
   font-weight: 800;
   line-height: 1.15;
   margin-bottom: 20px;
+  font-family: "Righteous", sans-serif;
+      line-height: 80px;
+
 }
 
 .hero-title span {
@@ -127,6 +131,13 @@
   color: #e0e0e0;
   line-height: 1.7;
   margin-bottom: 36px;
+  font-family: "Roboto Mono", monospace;
+}
+
+.hero-np-name {
+    background-color: #ffffff;
+    padding: 0px 13px;
+    /* border-radius: 10px; */
 }
 
 /* =====================

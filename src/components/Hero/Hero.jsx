@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import herovideo from "../../assets/hero.mp4"
+import herovideo from "../../assets/hero2.WEBM"
 import logo from "../../assets/np-logo.webp";
 
 const Hero = () => {
@@ -9,7 +9,7 @@ const Hero = () => {
   {/* Background Video */}
   <div className="hero-video">
     <video autoPlay muted loop playsInline>
-      <source src={herovideo} type="video/mp4" />
+      <source src={herovideo} type="video/WEBM" />
     </video>
   </div>
 
@@ -22,7 +22,7 @@ const Hero = () => {
   <img src={logo} alt="NP Computers Rahata" className="hero-logo" />
   <div className="line-animate" />
   <h1 className="hero-title">
-    Powering <span>Your Digital World</span> with NP Computers 
+    Powering Your Digital <span>World</span> with <span className="hero-np-name">NP Computers</span>
   </h1>
   <p className="hero-text">
     High-performance PCs, laptops, accessories, and expert repair services — 
