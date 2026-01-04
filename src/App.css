@@ -42,3 +42,6 @@
 .np-content {
   flex: 1;
 }
+p{
+  font-family: "Roboto Mono", monospace !important;
+}

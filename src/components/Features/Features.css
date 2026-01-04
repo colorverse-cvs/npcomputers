@@ -30,6 +30,7 @@
   transition: transform 0.3s;
   position: relative;
   top: -30px; /* optional extra lift over curve */
+  
 }
 
 
