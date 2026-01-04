@@ -1,0 +1,237 @@
+/* SECTION */
+.why-clean {
+position: relative; 
+  padding: 110px 20px;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* CONTAINER */
+.why-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 70px;
+  align-items: center;
+}
+
+
+/* LEFT SIDE */
+.why-left h2 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #585858;
+  font-family: "Montserrat", sans-serif;
+}
+.highlight-text{
+    /* font-family: "Righteous", sans-serif; */
+    font-size: 49px;
+    color: #0d6efd;
+}
+
+.why-left p {
+  margin-top: 22px;
+  color: #666;
+  line-height: 1.8;
+  max-width: 420px;
+}
+
+/* LINE ANIMATION */
+.line-animate {
+  width: 70px;
+  height: 4px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #110069, #3a22d9);
+  animation: lineGrow 1.2s ease forwards;
+}
+
+@keyframes lineGrow {
+  from { width: 0; }
+  to { width: 70px; }
+}
+
+/* RIGHT SIDE */
+.why-right {
+  position: relative;
+  padding-left: 50px;
+}
+
+/* TIMELINE */
+.why-right::before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(17, 0, 105, 0),
+    #110069,
+    #3a22d9,
+    rgba(17, 0, 105, 0)
+  );
+}
+
+/* ITEM */
+.why-item {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 42px;
+  align-items: flex-start;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.7s ease;
+}
+
+.why-item.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* DOT WITH GLOW */
+.why-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #3a22d9;
+  box-shadow: 0 0 0 rgba(58, 34, 217, 0.7);
+  animation: pulse 2s infinite;
+  flex-shrink: 0;
+  margin-top: 8px;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(58, 34, 217, 0.7); }
+  70% { box-shadow: 0 0 0 12px rgba(58, 34, 217, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(58, 34, 217, 0); }
+}
+
+/* ICON */
+.why-icon {
+    font-size: 1.8rem;
+    color: #ffffff;
+    transition: transform 0.4s ease, color 0.4s ease;
+    background: linear-gradient(135deg, #29b6f6, #0d47a1);
+    padding: 17px 16px;
+    /* border-radius: 50%; */
+    /* width: 85px; */
+}
+
+.why-item:hover .why-icon {
+  transform: translateY(-4px) rotate(-4deg);
+  color: #ffffff;
+}
+
+/* TEXT */
+.why-text h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #110069;
+  margin-bottom: 6px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.why-text p {
+  font-size: 0.96rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.dot-vector {
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background-image:
+    radial-gradient(circle at center, #110069 1.2px, transparent 1.4px),
+    radial-gradient(circle at center, #3a22d9 1.2px, transparent 1.4px);
+  background-size: 18px 18px, 22px 22px;
+  background-position: 0 0, 9px 9px;
+  opacity: 0.35;
+  animation: drift 22s linear infinite;
+  pointer-events: none;
+}
+.dv1 {
+  top: -180px;
+  left: -160px;
+  animation-duration: 26s;
+}
+
+.dv2 {
+  bottom: -200px;
+  right: -180px;
+  animation-duration: 30s;
+  opacity: 0.28;
+}
+
+.dv3 {
+    top: 30%;
+    left: 30%;
+    width: 420px;
+    height: 420px;
+    opacity: 0.30;
+    animation-duration: 34s;
+}
+@keyframes drift {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(40px, -30px) rotate(180deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(360deg);
+  }
+}
+
+.dot-vector {
+  mask-image: radial-gradient(circle, black 55%, transparent 75%);
+  -webkit-mask-image: radial-gradient(circle, black 55%, transparent 75%);
+}
+
+/* FLOAT ANIMATIONS */
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(40px, 30px); }
+}
+
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-50px, -40px); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(30px, -30px); }
+}
+
+/* KEEP CONTENT ABOVE VECTORS */
+.why-container {
+  position: relative;
+  z-index: 2;
+}
+
+.why-left,
+.why-right {
+  position: relative;
+  z-index: 2;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .why-container {
+    grid-template-columns: 1fr;
+  }
+
+  .why-right {
+    padding-left: 30px;
+  }
+
+  .why-left h2 {
+    font-size: 34px;
+  }
+}
+
