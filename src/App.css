@@ -34,3 +34,11 @@
 .read-the-docs {
   color: #888;
 }
+
+.np-layout {
+  display: flex;
+}
+
+.np-content {
+  flex: 1;
+}
