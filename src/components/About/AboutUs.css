@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@600;700&display=swap");
+
+.np-about {
+    padding: 140px 90px;
+    background: radial-gradient(circle at top, #0b1229, #0b173f 70%);
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+}
+
+/* AMBIENT MOVING GLOW */
+.np-about::before,
+.np-about::after {
+  content: "";
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(0,170,255,0.25), transparent 70%);
+  animation: floatGlow 12s infinite alternate ease-in-out;
+}
+
+.np-about::before {
+  top: -250px;
+  left: -200px;
+}
+
+.np-about::after {
+  bottom: -300px;
+  right: -250px;
+  animation-delay: 4s;
+}
+
+@keyframes floatGlow {
+  0% { transform: translateY(0) translateX(0); }
+  100% { transform: translateY(60px) translateX(40px); }
+}
+
+.np-about-wrap {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 100px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* SCROLL ANIMATION */
+.np-about-content,
+.np-about-image {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.np-about.active .np-about-content,
+.np-about.active .np-about-image {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.np-about.active .np-about-image {
+  transition-delay: 0.3s;
+}
+
+/* BACKGROUND BRAND TEXT – MOVING */
+.np-about-bgtext {
+  position: absolute;
+  top: -40px;
+  left: -10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 120px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.05);
+  letter-spacing: 8px;
+  white-space: nowrap;
+  animation: slideText 18s linear infinite;
+}
+
+@keyframes slideText {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-120px); }
+}
+
+/* TAG */
+.np-about-tag {
+    /* font-size: 42px; */
+    letter-spacing: 5px;
+    color: #00aaff;
+    /* font-weight: 600; */
+    margin-bottom: 20px;
+    display: inline-block;
+    font-size: 44px;
+    font-weight: 700;
+    /* color: #585858; */
+    font-family: "Montserrat", sans-serif;
+}
+
+/* HEADING */
+.np-about-heading {
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 30px;
+  background: linear-gradient(90deg, #ffffff, #9ad9ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* TEXT */
+.np-about-content p {
+  font-size: 16px;
+  line-height: 1.9;
+  color: #c7d1e0;
+  max-width: 520px;
+  margin-bottom: 18px;
+}
+
+/* SHIMMER LINE */
+.np-about-content::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 3px;
+  margin-top: 35px;
+  background: linear-gradient(90deg, transparent, #00aaff, transparent);
+  animation: shimmer 2.5s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
+}
+
+/* FOUNDER */
+.np-about-founder {
+  margin-top: 45px;
+  padding-left: 22px;
+  border-left: 2px solid #00aaff;
+}
+
+.np-about-founder strong {
+  font-size: 15px;
+  color: #fff;
+}
+
+.np-about-founder span {
+  font-size: 14px;
+  color: #9aa6bd;
+}
+
+/* IMAGE */
+.np-about-image {
+  position: relative;
+  animation: floatImage 6s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+  100% { transform: translateY(0); }
+}
+
+.np-about-image img {
+  width: 100%;
+border-radius: 15% 0% 15% 0%;
+  position: relative;
+  z-index: 2;
+    box-shadow: 0 40px 80px rgb(0 0 0 / 33%);
+}
+
+/* IMAGE GLOW */
+.image-gradient {
+  position: absolute;
+  inset: -20px;
+  background: radial-gradient(
+    circle at top left,
+    rgba(0,170,255,0.45),
+    rgba(0,91,187,0.15),
+    transparent 70%
+  );
+  filter: blur(60px);
+  z-index: 1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .np-about {
+    padding: 90px 30px;
+  }
+
+  .np-about-wrap {
+    grid-template-columns: 1fr;
+    gap: 70px;
+  }
+
+  .np-about-bgtext {
+    font-size: 70px;
+  }
+
+  .np-about-heading {
+    font-size: 34px;
+  }
+}
