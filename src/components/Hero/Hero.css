@@ -50,7 +50,7 @@
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgb(0 0 0 / 11%) 60%, rgba(0, 0, 0, 0) 100%);
+    /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgb(0 0 0 / 11%) 60%, rgba(0, 0, 0, 0) 100%); */
     z-index: 2;
 }
 
@@ -96,18 +96,32 @@
 ===================== */
 .line-animate {
   width: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #00aaff, #005bbb);
+  height: 4px;
   margin: 20px 0;
-  animation: lineGrow 1s ease forwards;
-  animation-delay: 0.5s;
+  background: linear-gradient(90deg, #00aaff, #005bbb);
+  border-radius: 4px;
+  animation: lineGrow 2s ease-in-out infinite;
 }
 
 @keyframes lineGrow {
-  to {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  40% {
     width: 140px;
+    opacity: 1;
+  }
+  70% {
+    width: 140px;
+    opacity: 1;
+  }
+  100% {
+    width: 0;
+    opacity: 0;
   }
 }
+
 
 /* =====================
    TEXT
