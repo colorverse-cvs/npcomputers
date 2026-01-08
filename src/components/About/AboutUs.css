@@ -176,7 +176,7 @@ border-radius: 15% 0% 15% 0%;
   position: absolute;
   inset: -20px;
   background: radial-gradient(
-    circle at top left,
+    circle at top center,
     rgba(0,170,255,0.45),
     rgba(0,91,187,0.15),
     transparent 70%
