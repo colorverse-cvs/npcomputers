@@ -1,23 +1,7 @@
 /* =====================
    HERO BASE
 ===================== */
-/* Hero bottom curve */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap'); 
-.hero-curve {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  z-index: 3; /* On top of video, below Features cards */
-}
-
-.hero-curve svg {
-  display: block;
-  width: 100%;
-  height: 100px;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Righteous&display=swap');
 
 .hero {
   position: relative;
@@ -26,6 +10,24 @@
   color: #fff;
   display: flex;
   align-items: center;
+}
+
+/* =====================
+   HERO CURVE
+===================== */
+.hero-curve {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 3;
+}
+
+.hero-curve svg {
+  display: block;
+  width: 100%;
+  height: 100px;
 }
 
 /* =====================
@@ -48,10 +50,9 @@
    OVERLAY
 ===================== */
 .hero-overlay {
-    position: absolute;
-    inset: 0;
-    /* background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgb(0 0 0 / 11%) 60%, rgba(0, 0, 0, 0) 100%); */
-    z-index: 2;
+  position: absolute;
+  inset: 0;
+  z-index: 2;
 }
 
 /* =====================
@@ -92,7 +93,7 @@
 }
 
 /* =====================
-   LINE
+   LINE ANIMATION
 ===================== */
 .line-animate {
   width: 0;
@@ -122,18 +123,15 @@
   }
 }
 
-
 /* =====================
    TEXT
 ===================== */
 .hero-title {
   font-size: 56px;
   font-weight: 800;
-  line-height: 1.15;
   margin-bottom: 20px;
   font-family: "Righteous", sans-serif;
-      line-height: 80px;
-
+  line-height: 80px;
 }
 
 .hero-title span {
@@ -149,9 +147,8 @@
 }
 
 .hero-np-name {
-    background-color: #ffffff;
-    padding: 0px 13px;
-    /* border-radius: 10px; */
+  background-color: #ffffff;
+  padding: 0 13px;
 }
 
 /* =====================
@@ -209,14 +206,103 @@
 }
 
 /* =====================
-   RESPONSIVE
+   TABLET RESPONSIVE
+===================== */
+@media (max-width: 1024px) {
+  .hero-left {
+    max-width: 80%;
+    margin-top: -50px;
+  }
+
+  .hero-title {
+    font-size: 46px;
+    line-height: 1.2;
+  }
+}
+
+/* =====================
+   MOBILE RESPONSIVE
 ===================== */
 @media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding-top: 120px;
+  }
+
+  .hero-container {
+    text-align: center;
+  }
+
+  .hero-left {
+    max-width: 100%;
+    margin: auto;
+    margin-top: -50px;
+  }
+
+  .hero-logo {
+    width: 95px;
+    margin: 0 auto 22px;
+  }
+
+  .line-animate {
+    margin: 20px auto;
+  }
+
   .hero-title {
     font-size: 40px;
+    line-height: 1.25;
+  }
+
+  /* NP Computers always one line */
+  .hero-np-name {
+    display: inline-block;
+    white-space: nowrap;
   }
 
   .hero-text {
-    font-size: 16px;
+    font-size: 15px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding-bottom: 80px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 12px 26px;
+    font-size: 14px;
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .hero-curve svg {
+    height: 60px;
+  }
+}
+
+/* =====================
+   SMALL PHONES
+===================== */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 34px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .hero-np-name {
+    padding: 0 10px;
+  }
+
+  .hero-actions {
+    padding-bottom: 100px;
   }
 }

@@ -45,3 +45,12 @@
 p{
   font-family: "Roboto Mono", monospace !important;
 }
+
+@media (max-width: 768px) {
+  .np-layout {
+  display: block !important;
+}
+.np-content{
+  margin-left: 0px !important;
+}
+}
