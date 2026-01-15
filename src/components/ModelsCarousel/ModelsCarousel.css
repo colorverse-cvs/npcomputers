@@ -76,7 +76,7 @@
 /* ============================= */
 
 .np-container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: auto;
   text-align: center;
   position: relative;
@@ -150,4 +150,28 @@
 
 .smooth .swiper-wrapper {
   transition-timing-function: linear !important;
+}
+
+@media (max-width: 768px) {
+  .np-title {
+    font-size: 31px;
+}
+.np-subtitle {
+    font-size: 16px;
+    margin: 13px 0 45px;
+    padding: 0px 22px;
+}
+.np-carousel-white {
+    padding: 50px 0;
+  }
+  .np-about-tag,.np-about-heading{
+        font-size: 35px;
+  }
+  .services-grid {
+    padding: 0px 20px;
+  }
+  .np-title.second {
+    margin-top: 66px;
+    font-size: 31px;
+}
 }

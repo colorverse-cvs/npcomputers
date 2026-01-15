@@ -11,6 +11,9 @@ import laptop2 from "../../assets/laptop2.webp";
 import laptop3 from "../../assets/laptop3.webp";
 import laptop4 from "../../assets/laptop4.png";
 import laptop5 from "../../assets/laptop5.png";
+import laptop6 from "../../assets/laptop2.webp";
+import laptop7 from "../../assets/laptop4.png";
+import laptop8 from "../../assets/laptop3.webp";
 
 // Accessories
 import mouse from "../../assets/Accessories1.png";
@@ -18,6 +21,9 @@ import keyboard from "../../assets/Accessories2.png";
 import headset from "../../assets/Accessories3.png";
 import monitor from "../../assets/Accessories4.png";
 import bag from "../../assets/Accessories5.png";
+import keyboard1 from "../../assets/Accessories2.png";
+import headset1 from "../../assets/Accessories3.png";
+import mouse1 from "../../assets/Accessories1.png";
 
 const laptops = [
   { img: laptop1, name: "ProBook X1", specs: "Intel i7 • 16GB • 512GB SSD" },
@@ -25,6 +31,11 @@ const laptops = [
   { img: laptop3, name: "Creator Max", specs: "Ryzen 7 • 32GB • 1TB SSD" },
   { img: laptop4, name: "Business Elite", specs: "Intel i7 • 1TB SSD" },
   { img: laptop5, name: "Gaming Core", specs: "Ryzen 9 • RTX Graphics" },
+  { img: laptop6, name: "ProBook X1", specs: "Intel i7 • 16GB • 512GB SSD" },
+  { img: laptop7, name: "Business Elite", specs: "Intel i7 • 1TB SSD" },
+  { img: laptop8, name: "Creator Max", specs: "Ryzen 7 • 32GB • 1TB SSD" },
+
+
 ];
 
 const accessories = [
@@ -33,6 +44,10 @@ const accessories = [
   { img: headset, name: "Gaming Headset", specs: "7.1 Surround" },
   { img: monitor, name: "4K Monitor", specs: "27-inch • IPS" },
   { img: bag, name: "Laptop Bag", specs: "Water Resistant" },
+  { img: keyboard1, name: "Mechanical Keyboard", specs: "RGB • Premium" }, 
+  { img: headset1, name: "Gaming Headset", specs: "7.1 Surround" },
+  { img: mouse1, name: "Wireless Mouse", specs: "Silent • Ergonomic" },
+
 ];
 
 const sliderSettings = {
@@ -42,7 +57,7 @@ const sliderSettings = {
   autoplay: { delay: 0, disableOnInteraction: false },
   slidesPerView: 4,
   spaceBetween: 30,
-  allowTouchMove: false,
+  allowTouchMove: true,
   breakpoints: {
     0: { slidesPerView: 1.3 },
     768: { slidesPerView: 2.5 },
