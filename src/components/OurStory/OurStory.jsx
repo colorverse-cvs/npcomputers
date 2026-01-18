@@ -7,9 +7,23 @@ const OurStory = () => {
       <div className="our-story-container">
 
         {/* IMAGE */}
-        <div className="our-story-image">
-          <img src={storyImg} alt="NP Computer Our Story" />
-        </div>
+{/* IMAGE */}
+<div className="our-story-image">
+  <img src={storyImg} alt="NP Computer Our Story" />
+
+  {/* Overlay Info */}
+  <div className="story-overlay">
+    <h3>10+ Years</h3>
+    <p>IT Experience</p>
+
+    <span className="divider"></span>
+
+    <p className="founder">
+      Founded by <strong>Mr. Nikhil Prabat</strong>
+    </p>
+  </div>
+</div>
+
 
         {/* CONTENT */}
         <div className="our-story-content">

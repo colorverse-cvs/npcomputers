@@ -124,6 +124,18 @@
     transform: none;
     margin-bottom: 40px;
   }
+  .specialize-section::before, .specialize-section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 78px !important;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+.hex-center img {
+  width: 283px;
+}
 }
 .hex-icon:hover,i:hover {
     color: #ffffff !important;

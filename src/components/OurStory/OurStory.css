@@ -1,6 +1,86 @@
 .our-story-section {
   padding: 100px 20px;
+  position: relative;
+  overflow: hidden;
   background: #f9f9ff;
+}
+
+/* Box Vector Shapes */
+.our-story-section::before,
+.our-story-section::after {
+  content: "";
+  position: absolute;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(148, 85, 208, 0.15), rgba(0, 170, 255, 0.15));
+  z-index: 0;
+}
+
+/* Top Left Box */
+.our-story-section::before {
+  width: 260px;
+  height: 260px;
+  top: -80px;
+  left: -80px;
+}
+
+/* Bottom Right Box */
+.our-story-section::after {
+  width: 320px;
+  height: 320px;
+  bottom: -100px;
+  right: -100px;
+}
+
+/* Keep content above background */
+.our-story-container {
+  position: relative;
+  z-index: 1;
+}
+
+.our-story-image {
+  position: relative;
+}
+
+/* Overlay Box */
+.story-overlay {
+  position: absolute;
+  bottom: -64px;
+  right: -45px;
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  padding: 18px 22px;
+  border-radius: 16px 16px;
+  max-width: 270px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Experience */
+.story-overlay h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #00aaff;
+}
+
+.story-overlay p {
+  font-size: 14px;
+  margin: 0;
+  color: #eee;
+}
+
+.story-overlay .divider {
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #9455d0;
+  margin: 12px 0;
+  border-radius: 2px;
+}
+
+.story-overlay .founder {
+  font-size: 13px;
+  color: #ddd;
 }
 
 .our-story-container {
@@ -16,17 +96,18 @@
 .our-story-image img {
   width: 100%;
   border-radius: 18px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* CONTENT */
 .our-story-content h2 {
-     font-size: 2.8rem;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
 }
-.our-story-content h2 span{
-    color: #00aaff;
+
+.our-story-content h2 span {
+  color: #00aaff;
 }
 
 .our-story-content .line {
@@ -55,4 +136,19 @@
   .our-story-content .line {
     margin: 15px auto 30px;
   }
+
+  .story-overlay h3 {
+    font-size: 18px;
+  }
+
+  .story-overlay .divider {
+    margin: 3px 0;
+  }
+
+  .story-overlay {
+    padding: 10px 12px;
+    bottom: -60px;
+    right: -12px;
+  }
+
 }

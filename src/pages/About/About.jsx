@@ -3,8 +3,7 @@ import logo from "../../assets/np-logo.webp";
 import Specialize from "../../components/Specialize/Specialize";
 import CTA from "../../components/CTA/CTA";
 import OurStory from "../../components/OurStory/OurStory";
-
-
+import ProjectStart from "../../components/ProjectStart/ProjectStart";
 
 const About = () => {
   return (
@@ -14,7 +13,10 @@ const About = () => {
       <OurStory/>
       <Specialize />
       <CTA/>
-
+          <ProjectStart
+      title={<>Delivering reliable and affordable<br /> technology solutions. </>}
+      buttonLabel="Contact Us"
+    />
     </section>
   );
 };
