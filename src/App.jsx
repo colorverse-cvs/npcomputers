@@ -6,6 +6,8 @@ import About from "./pages/About/About";
 import Products from "./pages/Products/Products";
 import Contact from "./pages/Contact/Contact";
 import "./App.css";
+import Breadcrumbs from "./components/Breadcrumbs/Breadcrumbs";
+
 
 
 function App() {
@@ -13,6 +15,7 @@ function App() {
     <div className="np-layout">
       <Header />
       <main className="np-content">
+        <Breadcrumbs />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

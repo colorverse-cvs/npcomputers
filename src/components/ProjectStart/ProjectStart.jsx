@@ -4,8 +4,8 @@ import "./ProjectStart.css";
 const ProjectStart = ({
   title = (
     <>
-      We Like To Start Your <br />
-      Project With Us
+      Start your digital journey with <br />
+      NP Computer today. 
     </>
   ),
 }) => {
