@@ -34,9 +34,9 @@ const Header = () => {
         </li>
 
         <li>
-          <NavLink to="/repair" className="np-link">
+          <NavLink to="/Services" className="np-link">
             <i className="bi bi-tools"></i>
-            <span>Repair</span>
+            <span>Services</span>
           </NavLink>
         </li>
 

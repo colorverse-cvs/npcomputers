@@ -21,7 +21,7 @@ const Breadcrumb = () => {
       subtitle: "Explore high-quality laptops, desktops, and accessories.",
       bg: productsBg,
     },
-    "/repair": {
+    "/Services": {
       title: "Our Services",
       subtitle: "Expert repair, upgrades, networking, and IT support.",
       bg: servicesBg,
