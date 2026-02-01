@@ -1,8 +1,9 @@
 /* SECTION */
 .category-section {
-  max-width: 1400px;
-  margin: 120px auto;
-  padding: 0 30px;
+    /* max-width: 1400px; */
+    margin: auto;
+    padding: 60px 30px;
+    background: linear-gradient(90deg, #ffffff 0%, #9b97d5a6 62%, #748cb5b8 100%);
 }
 .category-block {
   margin-bottom: 100px;
@@ -25,13 +26,24 @@
   border-radius: 10px;
 }
 
+.enquiry-p-btn {
+    padding: 8px 33px;
+    background: linear-gradient(118deg, #00aafffc, #004aab);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: white 1px solid;
+}
 
 .section-title {
   text-align: center;
   font-size: 46px;
   font-weight: 600;
   color: #110069;
-  margin-bottom: 80px;
+  margin-bottom: 55px;
 }
 
 /* GRID */

@@ -4,6 +4,10 @@ import desktop from "../../assets/images.png";
 import desktop1 from "../../assets/Accessories2.png";
 import laptop from "../../assets/laptop5.png";
 import laptop1 from "../../assets/laptop1.png";
+import laptop8 from "../../assets/laptop8.png";
+import desktop7 from "../../assets/desktop7.png";
+import laptop3 from "../../assets/laptop5.png";
+import desktop8 from "../../assets/desktop8.png";
 import cpu from "../../assets/cpu2.png";
 import cpu1 from "../../assets/cp1.png";
 import cctv1 from "../../assets/cm1.png";
@@ -27,10 +31,15 @@ const categoryData = [
   {
     category: "Desktops & Laptops",
     items: [
-            { title: "Desktops1", desc: "Custom & Office PCs", img: desktop1 },
+      { title: "Desktops1", desc: "Custom & Office PCs", img: desktop1 },
       { title: "Desktops", desc: "Custom & Office PCs", img: desktop },
+      { title: "Desktops", desc: "Custom & Office PCs", img: desktop8 },
+      { title: "Desktops", desc: "Custom & Office PCs", img: desktop7 },
       { title: "Laptops", desc: "Business & Gaming", img: laptop },
       { title: "Laptops1", desc: "Business & Gaming", img: laptop1 },
+      { title: "Laptops1", desc: "Business & Gaming", img: laptop3 },
+      { title: "Laptops1", desc: "Business & Gaming", img: laptop8 },
+      
 
     ],
   },
@@ -73,8 +82,9 @@ const categoryData = [
 
 const ProductCategories = () => {
   return (
-    <section className="category-section">
-      <h2 className="section-title">Our Products & Services</h2>
+    <section className="category-section ">
+      <div className="container">
+      {/* <h2 className="section-title">Our Products & Services</h2> */}
 
       {categoryData.map((group, index) => (
         <div className="category-block" key={index}>
@@ -91,11 +101,13 @@ const ProductCategories = () => {
 
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
+                <button className="enquiry-p-btn">Enquiry</button>
               </div>
             ))}
           </div>
         </div>
       ))}
+      </div>
     </section>
   );
 };
