@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import About from "./pages/About/About"; 
 import Products from "./pages/Products/Products";
+import Services from "./pages/Services/Services";
 import Contact from "./pages/Contact/Contact";
 import "./App.css";
 import Breadcrumbs from "./components/Breadcrumbs/Breadcrumbs";
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
+          <Route path="/Services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
          <Footer />
