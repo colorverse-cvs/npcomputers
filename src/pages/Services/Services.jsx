@@ -4,6 +4,8 @@ import repairImg from "../../assets/banner-1.webp";
 import repairImg1 from "../../assets/banner-2.webp";
 import repairImg2 from "../../assets/banner-3.webp";
 import CCTV_Services from "../../components/cctv_services/CCTV_Services";
+import ServiceCards from "../../components/ServiceCards/ServiceCards";
+import Feedback from "../../components/Feedback/Feedback";
 
 
 const slides = [
@@ -124,6 +126,8 @@ const Services = () => {
       </div>
 
       <CCTV_Services/>
+      <ServiceCards/>
+      <Feedback/>
 
     </div>
   );

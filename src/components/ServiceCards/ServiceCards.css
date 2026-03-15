@@ -1,0 +1,114 @@
+.services-hero-slide{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:60px;
+  border-radius:30px;
+  background: linear-gradient(118deg, #004aabeb, #00aaff94);
+  gap:40px;
+}
+
+.services-hero-content{
+  width:60%;
+}
+
+.services-hero-image{
+  width:40%;
+}
+
+.services-hero-image img{
+  width:100%;
+  border-radius:30px;
+}
+.service-card-section{
+padding:80px 0;
+background:#f6f7fb;
+text-align: center;
+}
+
+.service-card-container{
+    max-width: 1200px;
+    margin: auto;
+}
+/* title */
+
+.service-title h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "Poppins", sans-serif;
+}
+.service-title h2 span{
+    background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.feedback-tag-star{
+        background: linear-gradient(90deg, #00c6ff, #0072ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.service-title p{
+color:#666;
+margin-bottom:40px;
+}
+
+/* card */
+
+.service-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.service-card:hover{
+/* transform:translateY(-10px); */
+}
+
+/* image */
+
+.service-card img{
+width:85%;
+/* height:220px; */
+object-fit:cover;
+}
+
+/* card body */
+
+.service-card-body{
+    padding: 40px 25px;
+
+}
+
+.service-card-body h4{
+font-weight:600;
+margin-bottom:10px;
+}
+
+.service-card-body p{
+font-size:14px;
+color:#555;
+}
+
+/* button */
+
+.service-btn{
+margin-top:10px;
+background:linear-gradient(118deg,#00aaff,#004aab);
+border:none;
+padding:10px 22px;
+border-radius:30px;
+color:white;
+font-weight:600;
+cursor:pointer;
+}
+
+.service-btn:hover{
+background:linear-gradient(118deg,#004aab,#00aaff);
+}
+.swiper-button-next, .swiper-button-prev{
+    display: none !important;
+}

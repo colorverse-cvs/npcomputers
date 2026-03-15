@@ -30,7 +30,7 @@ const CCTV_Services = () => {
           <div className="col-lg-6 cctv-content">
 
             <h2 className="cctv-title">
-              NP Computers - <br />Trusted Leader in the  CCTV Industry.
+             <span>NP Computers  -</span> <br />Trusted Leader in the  CCTV Industry.
             </h2>
 
             <p className="cctv-text">

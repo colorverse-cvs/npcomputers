@@ -36,8 +36,11 @@
 .services-hero-slider {
   overflow: hidden;
   position: relative;
-  max-width: 85%;
+  max-width: 1200px;
   margin: auto;
+}
+.swiper{
+  width:100% !important;
 }
 
 .services-hero-wrapper{
@@ -55,6 +58,7 @@
   /* background:linear-gradient(90deg,#f6e3d8,#e8e7f6); */
     background: linear-gradient(118deg, #004aabeb, #00aaff94);
   gap:40px;
+  padding: 0px !important;
 }
 
 .services-hero-content{
@@ -88,7 +92,7 @@
 }
 
 .services-hero-image{
-  width:50%;
+  width:48% !important;
 }
 
 .services-hero-image-card{
