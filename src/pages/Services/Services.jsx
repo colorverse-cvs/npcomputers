@@ -6,7 +6,7 @@ import repairImg2 from "../../assets/banner-3.webp";
 import CCTV_Services from "../../components/cctv_services/CCTV_Services";
 import ServiceCards from "../../components/ServiceCards/ServiceCards";
 import Feedback from "../../components/Feedback/Feedback";
-
+import InquiryPopup from "../../components/InquiryPopup/InquiryPopup";
 
 const slides = [
   {
@@ -71,7 +71,9 @@ const slides = [
 ];
 
 const Services = () => {
+
   const [index, setIndex] = useState(0);
+  const [openPopup, setOpenPopup] = useState(false); // 👈 FIRST
 
   const nextSlide = () => {
     setIndex((prev) => (prev + 1) % slides.length);
@@ -83,12 +85,20 @@ const Services = () => {
 
   /* AUTO SLIDER */
   useEffect(() => {
+
+    if (openPopup) return; // popup open असेल तर slider stop
+
     const interval = setInterval(() => {
       nextSlide();
-    }, 4000); // 4 seconds
+    }, 4000);
 
     return () => clearInterval(interval);
-  }, []);
+
+  }, [openPopup]);
+
+
+
+  // const [openPopup, setOpenPopup] = useState(false);
 
   return (
     <div className="services-hero">
@@ -105,7 +115,12 @@ const Services = () => {
               <div className="services-hero-content">
                 <h1>{slide.title}</h1>
                 <p>{slide.desc}</p>
-                <button className="services-hero-btn">GET A SCHEDULE</button>
+<button
+className="services-hero-btn"
+onClick={() => setOpenPopup(true)}
+>
+GET A SCHEDULE
+</button>
               </div>
 
               <div className="services-hero-image">
@@ -117,7 +132,10 @@ const Services = () => {
             </div>
           ))}
         </div>
-
+<InquiryPopup
+isOpen={openPopup}
+onClose={() => setOpenPopup(false)}
+/>
         <div className="services-hero-controls">
           <button onClick={prevSlide}>‹</button>
           <button onClick={nextSlide}>›</button>

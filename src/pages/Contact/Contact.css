@@ -178,7 +178,7 @@ background: linear-gradient(118deg, #00aaff, #004aab);
   border-radius: 22px;
 
   box-shadow:
-    0 25px 60px rgba(17, 0, 105, 0.18),
+    0 8px 8px rgba(17, 0, 105, 0.18),
     inset 0 0 0 1px rgba(255, 255, 255, 0.6);
 
   overflow: hidden;
@@ -215,7 +215,7 @@ background: linear-gradient(118deg, #00aaff, #004aab);
 /* ===== HOVER EFFECT ===== */
 .contact-info.horizontal .info-item:hover {
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 40px 90px rgba(108, 92, 231, 0.35);
+  box-shadow: 0 10px 10px rgba(108, 92, 231, 0.35);
 }
 
 .contact-info.horizontal .info-item:hover::before {

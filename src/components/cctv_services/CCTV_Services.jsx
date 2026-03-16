@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CCTV_Services.css";
 import img1 from "../../assets/cctv-1.webp";
 import img2 from "../../assets/cctv-2.webp";
 import img3 from "../../assets/cctv-3.webp";
 import img4 from "../../assets/cctv-4.webp";
+import InquiryPopup from "../InquiryPopup/InquiryPopup";
 
 const CCTV_Services = () => {
+  const [openPopup, setOpenPopup] = useState(false);
   return (
     <section className="cctv-about-section py-5">
       <div className="cctv-container">
@@ -90,12 +92,15 @@ const CCTV_Services = () => {
 
             </div>
 
-            <button className="cctv-btn">
+            <button className="cctv-btn" onClick={() => setOpenPopup(true)}>
               MORE ABOUT US
             </button>
 
           </div>
-
+      <InquiryPopup
+        isOpen={openPopup}
+        onClose={() => setOpenPopup(false)}
+      />
         </div>
       </div>
     </section>

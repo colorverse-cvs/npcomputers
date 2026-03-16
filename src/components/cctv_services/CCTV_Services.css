@@ -134,5 +134,5 @@ transition:0.3s;
 }
 
 .cctv-btn:hover{
-background:#e55320;
+background: linear-gradient(118deg, #004aab, #00aaff);
 }

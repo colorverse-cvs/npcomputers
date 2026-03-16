@@ -1,13 +1,14 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import "./ServiceCards.css";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import InquiryPopup from "../InquiryPopup/InquiryPopup";
 
 import "swiper/css";
 import "swiper/css/navigation";
 
-import img1 from "../../assets/service-1.webp";
+import img1 from "../../assets/service-5.png";
 import img2 from "../../assets/service-3.webp";
 import img3 from "../../assets/service-4.webp";
 import img4 from "../../assets/service-1.webp";
@@ -26,7 +27,7 @@ const services = [
   {
     title: "Virus Removal",
     desc: "Remove malware, spyware, and viruses to keep your computer safe and running smoothly.",
-    img: img3,
+    img: img1,
   },
   {
     title: "Laptop Repair",
@@ -36,6 +37,29 @@ const services = [
 ];
 
 const ServiceCards = () => {
+
+const [openPopup, setOpenPopup] = useState(false);
+const [selectedService, setSelectedService] = useState("");
+
+
+  const swiperRef = useRef(null);
+
+  const openHandler = () => {
+    setOpenPopup(true);
+
+    if (swiperRef.current) {
+      swiperRef.current.autoplay.stop(); // stop slider
+    }
+  };
+
+  const closeHandler = () => {
+    setOpenPopup(false);
+
+    if (swiperRef.current) {
+      swiperRef.current.autoplay.start(); // restart slider
+    }
+  };
+
   return (
     <section className="service-card-section">
 
@@ -55,6 +79,7 @@ const ServiceCards = () => {
           navigation
           autoplay={{ delay: 3000 }}
           loop={true}
+          onSwiper={(swiper) => (swiperRef.current = swiper)}
           breakpoints={{
             0: { slidesPerView: 1 },
             768: { slidesPerView: 2 },
@@ -68,18 +93,23 @@ const ServiceCards = () => {
 
               <div className="service-card">
 
-
                 <div className="service-card-body">
 
                   <h4>{service.title}</h4>
 
                   <p>{service.desc}</p>
 
-                <img src={service.img} alt="" />
+                  <img src={service.img} alt="" />
 
-                  <button className="service-btn mt-4">
-                    Contact Now
-                  </button>
+<button
+  className="service-btn"
+  onClick={() => {
+    setSelectedService(service.title);
+    setOpenPopup(true);
+  }}
+>
+  Contact Now
+</button>
 
                 </div>
 
@@ -90,6 +120,12 @@ const ServiceCards = () => {
           ))}
 
         </Swiper>
+
+<InquiryPopup
+  isOpen={openPopup}
+  onClose={() => setOpenPopup(false)}
+  itemName={selectedService}
+/>
 
       </div>
 

@@ -1,0 +1,142 @@
+/* Overlay */
+
+.popup-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.55);
+backdrop-filter: blur(6px);
+display:flex;
+align-items:center;
+justify-content:center;
+z-index:9999;
+padding:20px;
+}
+
+
+/* Popup Box */
+
+.popup-form{
+background:linear-gradient(145deg,#ffffff,#f5f7ff);
+padding:40px;
+width:420px;
+max-width:100%;
+border-radius:18px;
+position:relative;
+box-shadow:0 25px 60px rgba(0,0,0,0.25);
+animation:popupScale .35s ease;
+font-family:"Poppins",sans-serif;
+}
+
+
+/* Animation */
+
+@keyframes popupScale{
+from{
+transform:scale(.85) translateY(20px);
+opacity:0;
+}
+to{
+transform:scale(1) translateY(0);
+opacity:1;
+}
+}
+
+
+/* Title */
+
+.popup-form h3{
+font-size:24px;
+font-weight:700;
+color:#191d30;
+margin-bottom:10px;
+}
+
+
+/* Selected Product / Service */
+
+.selected-product{
+font-size:14px;
+color:#555;
+margin-bottom:20px;
+background:#f4f6ff;
+padding:8px 12px;
+border-radius:6px;
+}
+
+.selected-product strong{
+color:#191d30;
+}
+
+
+/* Inputs */
+
+.popup-form input,
+.popup-form textarea{
+width:100%;
+padding:12px 14px;
+margin-bottom:14px;
+border:1px solid #e2e6ff;
+border-radius:8px;
+font-size:14px;
+transition:all .2s ease;
+outline:none;
+background:#fff;
+}
+
+
+/* Input focus */
+
+.popup-form input:focus,
+.popup-form textarea:focus{
+border-color:#4c6fff;
+box-shadow:0 0 0 3px rgba(76,111,255,.15);
+}
+
+
+/* Button */
+
+.popup-form button{
+width:100%;
+padding:12px;
+background:linear-gradient(135deg,#191d30,#2d3a75);
+color:white;
+border:none;
+border-radius:8px;
+font-size:15px;
+font-weight:600;
+cursor:pointer;
+transition:all .25s ease;
+}
+
+
+/* Button hover */
+
+.popup-form button:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+
+/* Close Button */
+
+.popup-close-btn{
+width: 30px !important;
+position:absolute;
+top:14px;
+right:16px;
+border:none;
+background:#f3f4ff;
+width:32px;
+height:32px;
+border-radius:50%;
+font-size:16px;
+cursor:pointer;
+display:flex;
+align-items:center;
+justify-content:center;
+transition:.2s;
+}
+

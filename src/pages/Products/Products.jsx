@@ -1,4 +1,6 @@
 import "./products.css";
+import React, { useState } from "react";
+import InquiryPopup from "../../components/InquiryPopup/InquiryPopup";
 
 import desktop from "../../assets/images.png";
 import desktop1 from "../../assets/Accessories2.png";
@@ -81,6 +83,8 @@ const categoryData = [
 ];
 
 const ProductCategories = () => {
+const [openPopup, setOpenPopup] = useState(false);
+const [selectedProduct, setSelectedProduct] = useState("");
   return (
     <section className="category-section ">
       <div className="container">
@@ -101,10 +105,24 @@ const ProductCategories = () => {
 
                 <h3>{item.title}</h3>
                 <p>{item.desc}</p>
-                <button className="enquiry-p-btn">Enquiry</button>
+             <button
+className="enquiry-p-btn"
+onClick={() => {
+setSelectedProduct(item.title);
+setOpenPopup(true);
+}}
+>
+Enquiry
+</button>
               </div>
+              
             ))}
           </div>
+               <InquiryPopup
+isOpen={openPopup}
+onClose={() => setOpenPopup(false)}
+productName={selectedProduct}
+/>
         </div>
       ))}
       </div>
