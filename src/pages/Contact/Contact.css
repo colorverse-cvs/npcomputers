@@ -468,3 +468,13 @@ font-size:12px;
   }
 }
 
+
+.glass-card form input, .glass-card form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    color: black !important;
+}

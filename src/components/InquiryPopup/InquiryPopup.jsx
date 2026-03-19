@@ -12,14 +12,14 @@ const InquiryPopup = ({ isOpen, onClose, productName = "" }) => {
 
     const formData = new FormData(e.target);
 
-    formData.append("access_key", "f4c6070b-c96b-40f8-98be-abceb03dc532");
+    formData.append("access_key", "c9549959-245f-4130-92d0-dcd229f28f63");
 
     // Subject fix (undefined avoid)
     formData.append(
       "subject",
       productName
-        ? `New Inquiry for ${productName}`
-        : "New Inquiry Form Submission"
+        ? `New Enquiry for ${productName}`
+        : "New Enquiry Form Submission"
     );
 
     formData.append("from_name", formData.get("fullName"));
@@ -38,7 +38,7 @@ const InquiryPopup = ({ isOpen, onClose, productName = "" }) => {
       const result = await response.json();
 
       if (result.success) {
-        alert("Inquiry sent successfully!");
+        alert("Enquiry sent successfully!");
         e.target.reset();
         onClose();
       } else {
@@ -59,7 +59,7 @@ const InquiryPopup = ({ isOpen, onClose, productName = "" }) => {
           ✕
         </button>
 
-        <h3>Inquiry Form</h3>
+        <h3>Enquiry Form</h3>
 
         {/* Product name only if exists */}
         {productName && (
@@ -99,7 +99,7 @@ const InquiryPopup = ({ isOpen, onClose, productName = "" }) => {
           ></textarea>
 
           <button type="submit" disabled={loading}>
-            {loading ? "Sending..." : "Send Inquiry"}
+            {loading ? "Sending..." : "Send Enquiry"}
           </button>
 
         </form>

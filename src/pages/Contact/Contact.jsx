@@ -10,7 +10,7 @@ const Contact = () => {
     setLoading(true);
 
     const formData = new FormData(e.target);
-    formData.append("access_key", "f4c6070b-c96b-40f8-98be-abceb03dc532");
+    formData.append("access_key", "c9549959-245f-4130-92d0-dcd229f28f63");
     formData.append("subject", "New Contact Form Submission");
     formData.append("from_name", formData.get("fullName"));
 formData.append("subject", "New Contact Form Submission");

@@ -140,3 +140,16 @@ justify-content:center;
 transition:.2s;
 }
 
+
+.popup-form input, .popup-form textarea {
+    width: 100%;
+    padding: 12px 14px;
+    margin-bottom: 14px;
+    border: 1px solid #e2e6ff;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all .2s ease;
+    outline: none;
+    background: #ffffff;
+    color: black !important;
+}
