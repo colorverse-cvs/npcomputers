@@ -119,7 +119,7 @@ const Services = () => {
 className="services-hero-btn"
 onClick={() => setOpenPopup(true)}
 >
-GET A SCHEDULE
+Contact Now
 </button>
               </div>
 

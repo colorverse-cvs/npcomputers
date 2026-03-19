@@ -33,35 +33,35 @@ const categoryData = [
   {
     category: "Desktops & Laptops",
     items: [
-      { title: "Desktops1", desc: "Custom & Office PCs", img: desktop1 },
-      { title: "Desktops", desc: "Custom & Office PCs", img: desktop },
-      { title: "Desktops", desc: "Custom & Office PCs", img: desktop8 },
-      { title: "Desktops", desc: "Custom & Office PCs", img: desktop7 },
-      { title: "Laptops", desc: "Business & Gaming", img: laptop },
-      { title: "Laptops1", desc: "Business & Gaming", img: laptop1 },
-      { title: "Laptops1", desc: "Business & Gaming", img: laptop3 },
-      { title: "Laptops1", desc: "Business & Gaming", img: laptop8 },
+      { title: "Philips E9 series", desc: "Custom & Office PCs", img: desktop1 },
+      { title: "Samsung series 4K UHD ", desc: "Custom & Office PCs", img: desktop },
+      { title: "Apple iMac", desc: "Custom & Office PCs", img: desktop8 },
+      { title: " Apple iMac", desc: "Custom & Office PCs", img: desktop7 },
+      { title: "Microsoft Surface", desc: "Business & Gaming", img: laptop },
+      { title: "Walker NU14A2", desc: "Business & Gaming", img: laptop1 },
+      { title: "Microsoft Surface", desc: "Business & Gaming", img: laptop3 },
+      { title: "Apple MacBook Air", desc: "Business & Gaming", img: laptop8 },
       
 
-    ],
+    ],  
   },
   {
     category: "Core Components",
     items: [
-      { title: "CPU / Processor", desc: "Intel & AMD", img: cpu },
-      { title: "CPU1 / Processor", desc: "Intel & AMD", img: cpu1 },
-      { title: "SSD / Storage", desc: "Fast Storage Solutions", img: ssd },
-      { title: "SSD / Storage", desc: "Fast Storage Solutions", img: ssd4 },
+      { title: "Coolman Robin lll", desc: "Intel & AMD", img: cpu },
+      { title: "Lovingcool gaming LC-TX360 ", desc: "Intel & AMD", img: cpu1 },
+      { title: "M.2 SSD", desc: "Fast Storage Solutions", img: ssd },
+      { title: "SSD / 500GB", desc: "Fast Storage Solutions", img: ssd4 },
 
     ],
   },
   {
     category: "Security Solutions",
     items: [
-      { title: "CCTV Cameras", desc: "Security Systems", img: cctv1 },
-      { title: "CCTV Cameras", desc: "Security Systems", img: cctv2 },
-      { title: "CCTV Cameras", desc: "Security Systems", img: cctv3 },
-      { title: "CCTV Cameras", desc: "Security Systems", img: cctv4 },
+      { title: "dome CCTV camera", desc: "Security Systems", img: cctv1 },
+      { title: "wall mounted surveillance", desc: "Security Systems", img: cctv2 },
+      { title: "indoor/outdoor dome", desc: "Security Systems", img: cctv3 },
+      { title: "dome CCTV cameras", desc: "Security Systems", img: cctv4 },
 
     ],
   },

@@ -34,6 +34,12 @@ const services = [
     desc: "Screen replacement, battery issues, keyboard repair, and complete laptop servicing.",
     img: img4,
   },
+    {
+    title: "Virus Removal",
+    desc: "Remove malware, spyware, and viruses to keep your computer safe and running smoothly.",
+    img: img1,
+  },
+  
 ];
 
 const ServiceCards = () => {
@@ -74,8 +80,9 @@ const [selectedService, setSelectedService] = useState("");
 
         <Swiper
           modules={[Navigation, Autoplay]}
-          spaceBetween={30}
+          spaceBetween={10}
           slidesPerView={3}
+          centeredSlides={true}
           navigation
           autoplay={{ delay: 3000 }}
           loop={true}

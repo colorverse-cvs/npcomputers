@@ -136,3 +136,27 @@ transition:0.3s;
 .cctv-btn:hover{
 background: linear-gradient(118deg, #004aab, #00aaff);
 }
+
+@media (max-width:768px){
+.img2{
+        margin-top: 35px;
+}
+.cctv-icon {
+        width: 150px;
+    height: 47px;
+    font-size: 0px;
+}
+    .cctv-title {
+    font-size: 32px;
+    }
+
+    .service-card-section{
+            padding: 15px 20px;
+    }
+}
+
+@media (max-width:578px){ 
+    .cctv-title {
+    font-size: 28px;
+    }
+}

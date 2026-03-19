@@ -407,3 +407,64 @@ width: 70px;
   border: 0;
   filter: saturate(1.2) contrast(1.05);
 }
+
+
+@media (max-width: 1024px){
+
+.contact-info.horizontal .info-item{
+min-width:260px;
+}
+}
+
+@media (max-width: 768px){
+
+.contact-info.horizontal{
+margin-top:60px;
+padding: 15px;
+}
+
+.contact-info.horizontal .info-item{
+width:100%;
+/* min-width; */
+padding:20px;
+}
+
+.contact-info.horizontal .info-icon{
+width:60px;
+height:60px;
+font-size:1.8rem;
+}
+
+.contact-info.horizontal .info-text p{
+font-size:15px;
+}
+}
+
+@media (max-width: 480px){
+
+.contact-info.horizontal .info-text p{
+font-size:14px;
+}
+
+.contact-info.horizontal .info-text span{
+font-size:12px;
+}
+}
+
+@media (max-width: 480px){
+
+.contact-section {
+  padding: 1px 0;
+}
+.form-title {
+    font-size: 31px;
+  }
+  .glass-card{
+        width: 100%;
+        padding: 20px;
+  }
+  .contact-left h1 {
+        font-size: 31px;
+  }
+}
+

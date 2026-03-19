@@ -1,3 +1,5 @@
+/* ================= FEEDBACK SECTION ================= */
+
 .feedback-section{
 padding:100px 10%;
 background:linear-gradient(135deg,#0a0033,#12005a,#1d006d);
@@ -12,7 +14,7 @@ justify-content:space-between;
 gap:60px;
 }
 
-/* LEFT */
+/* ================= LEFT ================= */
 
 .feedback-left{
 max-width:420px;
@@ -31,7 +33,7 @@ margin-top:15px;
 line-height:1.3;
 }
 
-/* NAV BUTTON */
+/* ================= NAV BUTTON ================= */
 
 .feedback-nav{
 margin-top:30px;
@@ -40,26 +42,31 @@ gap:10px;
 }
 
 .feedback-nav div {
-    font-size: 24px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    /* background: white; */
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    background: linear-gradient(118deg, #004aab, #00aaff);
+font-size: 22px;
+width: 42px;
+height: 42px;
+border-radius: 50%;
+color: #ffffff;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+background: linear-gradient(118deg, #004aab, #00aaff);
+transition:0.3s;
 }
 
-/* SLIDER */
+.feedback-nav div:hover{
+transform:scale(1.1);
+}
+
+/* ================= SLIDER ================= */
 
 .feedback-slider{
 width:700px;
+max-width:100%;
 }
 
-/* CARD */
+/* ================= CARD ================= */
 
 .feedback-card{
 background:rgba(255,255,255,0.05);
@@ -69,12 +76,12 @@ border-radius:18px;
 backdrop-filter:blur(10px);
 transition:0.3s;
 height: 250px;
+display:flex;
+flex-direction:column;
+justify-content:space-between;
 }
 
-.feedback-card:hover{
-/* transform:translateY(-8px); */
-border-color:#ffffff;
-}
+.feedback-card:hover
 
 .stars{
 color:#ffc107;
@@ -94,4 +101,94 @@ margin-top:20px;
 .feedback-card span{
 font-size:13px;
 opacity:0.7;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Laptop */
+@media (max-width: 1200px){
+.feedback-slider{
+width:600px;
+}
+}
+
+/* Tablet */
+@media (max-width: 1024px){
+
+.feedback-container{
+flex-direction:column;
+text-align:center;
+gap:40px;
+}
+
+.feedback-left{
+max-width:100%;
+}
+
+.feedback-slider{
+width:100%;
+}
+
+.feedback-left h2{
+font-size:32px;
+}
+
+.feedback-tag{
+font-size:28px;
+}
+
+.feedback-nav{
+justify-content:center;
+}
+}
+
+/* Mobile */
+@media (max-width: 768px){
+
+.feedback-section{
+padding:60px 20px;
+}
+
+.feedback-left h2{
+font-size:26px;
+}
+
+.feedback-tag{
+font-size:22px;
+}
+
+.feedback-card{
+padding:20px;
+height:auto;
+}
+
+.feedback-card p{
+font-size:13px;
+}
+
+.feedback-nav div{
+width:38px;
+height:38px;
+font-size:18px;
+}
+}
+
+/* Small Mobile */
+@media (max-width: 480px){
+
+.feedback-left h2{
+font-size:22px;
+}
+
+.feedback-tag{
+font-size:30px;
+}
+
+.feedback-card{
+padding:18px;
+}
+
+.feedback-card p{
+font-size:12px;
+}
 }

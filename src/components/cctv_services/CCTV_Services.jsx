@@ -93,7 +93,7 @@ const CCTV_Services = () => {
             </div>
 
             <button className="cctv-btn" onClick={() => setOpenPopup(true)}>
-              MORE ABOUT US
+              Enquire Now
             </button>
 
           </div>

@@ -1,18 +1,20 @@
 import "./MissionVision.css";
 
-import p1 from "../../assets/01.png";
-import p2 from "../../assets/02.png";
-import p3 from "../../assets/01.png";
-import p4 from "../../assets/02.png";
-import p5 from "../../assets/01.png";
-import p6 from "../../assets/02.png";
-import p7 from "../../assets/01.png";
-import p8 from "../../assets/02.png";
+import p1 from "../../assets/Compaq.jpg";
+import p2 from "../../assets/HP.jpg";
+import p3 from "../../assets/lenovo-logo.jpg";
+import p4 from "../../assets/DELL.jpg";
+import p5 from "../../assets/Toshiba.jpg";
+import p6 from "../../assets/Acer.jpg";
+import p7 from "../../assets/Samsung.jpg";
+import p8 from "../../assets/Sony.jpg";
+import p9 from "../../assets/Apple.jpg";
+
 
 
 
 const MissionVision = () => {
-const partners = [p1, p2, p3, p4, p5, p6, p7, p8];
+const partners = [p1, p2, p3, p4, p5, p6, p7, p8, p9];
   return (
     <>
       {/* CTA AREA */}
@@ -33,7 +35,7 @@ const partners = [p1, p2, p3, p4, p5, p6, p7, p8];
 
               <div className="mb-20 mt-10">
                 <a href="tel:+21236547898" className="cta-border-btn">
-                  <i className="bi bi-headset"></i> +2 123 654 7898
+                  <i className="bi bi-headset"></i> +91 80800 81972
                 </a>
               </div>
 
@@ -81,7 +83,7 @@ const partners = [p1, p2, p3, p4, p5, p6, p7, p8];
                     <i className="bi bi-people"></i>
                   </div>
                   <div>
-                    <span className="counter">400</span>
+                    <span className="counter">30</span>
                     <h6 className="title">+ Experts Staffs</h6>
                   </div>
                 </div>
