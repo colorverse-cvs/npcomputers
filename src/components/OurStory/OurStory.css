@@ -107,7 +107,9 @@
 }
 
 .our-story-content h2 span {
-  color: #00aaff;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .our-story-content .line {

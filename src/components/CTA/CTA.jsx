@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CTA.css";
 import ctcbg from "../../assets/cta-bg.MP4";
+import InquiryPopup from "../../components/InquiryPopup/InquiryPopup";
 
 const CTA = () => {
+   const [openPopup, setOpenPopup] = useState(false);
+
   return (
     <section className="cta-section d-flex align-items-center">
       {/* Background Video */}
@@ -28,10 +31,14 @@ const CTA = () => {
               growth.
             </p>
 
-            <a href="/contact" className="btn btn-cta mt-3">
+            <button className="btn-cta" onClick={() => setOpenPopup(true)}>
               Speak With Our Experts
-            </a>
+            </button>
           </div>
+                <InquiryPopup
+        isOpen={openPopup}
+        onClose={() => setOpenPopup(false)}
+      />
         </div>
       </div>
     </section>

@@ -1,9 +1,11 @@
 import "./About.css";
 import logo from "../../assets/np-logo.webp";
-import Specialize from "../../components/Specialize/Specialize";
+// import Specialize from "../../components/Specialize/Specialize";
 import CTA from "../../components/CTA/CTA";
 import OurStory from "../../components/OurStory/OurStory";
 import ProjectStart from "../../components/ProjectStart/ProjectStart";
+import MissionVision from "../../components/MissionVision/MissionVision";
+
 
 const About = () => {
   return (
@@ -11,7 +13,8 @@ const About = () => {
 
       {/* SPECIALIZE SECTION */}
       <OurStory/>
-      <Specialize />
+      <MissionVision/>
+      {/* <Specialize /> */}
       <CTA/>
           <ProjectStart
       title={<>Delivering reliable and affordable<br /> technology solutions. </>}
