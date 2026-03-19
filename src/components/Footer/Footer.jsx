@@ -50,17 +50,17 @@ const Footer = () => {
           <h4>Contact Us</h4>
 
           <p>
-            <div class="footer-icons"> <i class="bi bi-telephone-fill"></i></div>
+            <div class="footer-icons"> <i class="bi bi-geo-alt-fill"></i> </div>
             Rahata, Shirdi,<br /> Maharashtra 423107
           </p>
 
           <p>
-            <div class="footer-icons"> <i class="bi bi-envelope-fill"></i></div>
+            <div class="footer-icons"><i class="bi bi-telephone-fill"></i> </div>
             <a className="footer-phone" href="tel:+918080081972">+91 80800 81972</a>
           </p>
 
           <p>
-           <div class="footer-icons"> <i class="bi bi-geo-alt-fill"></i></div>
+           <div class="footer-icons"><i class="bi bi-envelope-fill"></i></div>
             <a className="footer-email" href="mailto:npinfotech2627@gmail.com">
               npinfotech2627@gmail.com
             </a>
@@ -73,21 +73,43 @@ const Footer = () => {
   <h4>Follow Us</h4>
 
   <div className="social-icons">
-    <a href="#">
-      <img src={insta} alt="insta" />
+
+    {/* Instagram */}
+    <a 
+      href="https://instagram.com/npcomputers_rahata" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img src={insta} alt="Instagram" />
     </a>
 
-    <a href="#">
-      <img src={whatsapp} alt="whatsapp" />
+    {/* WhatsApp */}
+    <a 
+      href="https://wa.me/918080081972" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img src={whatsapp} alt="WhatsApp" />
     </a>
 
-    <a href="#">
-      <img src={facebook} alt="facebook" />
+    {/* Facebook */}
+    <a 
+      href="https://facebook.com/npcomputers_rahata" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img src={facebook} alt="Facebook" />
     </a>
 
-    <a href="#">
-      <img src={youtube} alt="youtube" />
+    {/* YouTube */}
+    <a 
+      href="https://youtube.com/@yourchannel" 
+      target="_blank" 
+      rel="noopener noreferrer"
+    >
+      <img src={youtube} alt="YouTube" />
     </a>
+
   </div>
 </div>
 
